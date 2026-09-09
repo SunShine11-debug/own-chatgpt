@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AI  Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="brand">
+                <div class="logo-icon">✨</div>
+                <div>
+                    <h2> AI  Workspace</h2>
+                    <span class="status-text"><span class="status-dot"></span> Online</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="chat-box" class="chat-box">
+            <div class="message ai-message">
+                Hello! How can I assist you today?
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Type your prompt here..." 
+                onkeydown="if(event.key === 'Enter') sendMessage()"
+            />
+            <button onclick="sendMessage()" id="send-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
